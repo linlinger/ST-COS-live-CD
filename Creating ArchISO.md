@@ -1,6 +1,6 @@
 # Creating ArchISO   
 
-
+##Before reading this . It's recommended to download this and view using an text editor
 ## Steps
 
 1) Installing archiso by sudo pacman -S archiso   
@@ -49,7 +49,7 @@ yakuake 			#a drop-down terminal
 wqy-zenhei 			#a font supports Chinese.    
  #Add more packages as you want
 
-when finish editing the file. Save your changes.
+when you finish editing the file. Save your changes.
 
 3) Users and passwords
 
@@ -61,8 +61,8 @@ For example, to add a user archie. Add them to archlive/airootfs/etc/passwd foll
 
 archlive/airootfs/etc/passwd
 
-root:x:0:0:root:/root:/usr/bin/zsh
-archie:x:1000:1000::/home/archie:/usr/bin/zsh
+root:x:0:0:root:/root:/usr/bin/zsh   
+archie:x:1000:1000::/home/archie:/usr/bin/zsh    
 
 Generate a password hash with openssl passwd -6 and add it to archlive/airootfs/etc/shadow following the syntax of shadow(5). For example:
 
@@ -71,7 +71,7 @@ archlive/airootfs/etc/shadow
 root::14871::::::
 archie:$6$archiesalt$1yystReWRMUYWmt7fTR/BjcRWrmF//984HxCL6QxCMeDes0pEBRG3v1Jyqp1I1/x46kmU7KyjDfTXikqtq3YY.:14871::::::
 
-Add the user's group and the groups which they will part of to archlive/airootfs/etc/group according to group(5). For example:
+Add the user's group and the groups which they will part of to archlive/airootfs/etc/group according to group. For example:
 
 archlive/airootfs/etc/group
 
