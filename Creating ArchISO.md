@@ -50,6 +50,10 @@ wqy-zenhei 			#a font supports Chinese.
  #Add more packages as you want
 
 when you finish editing the file. Save your changes.
+4) Add A user
+
+
+Quote archiso  from arch wiki   
 
 3) Users and passwords
 
@@ -59,38 +63,34 @@ Note: If these files exist, they must contain the root user and group.
 
 For example, to add a user archie. Add them to archlive/airootfs/etc/passwd following the passwd(5) syntax:
 
-archlive/airootfs/etc/passwd
-
-root:x:0:0:root:/root:/usr/bin/zsh   
-archie:x:1000:1000::/home/archie:/usr/bin/zsh    
+archlive/airootfs/etc/passwd   
+root:x:0:0:root:/root:/usr/bin/zsh      
+archie:x:1000:1000::/home/archie:/usr/bin/zsh       
 
 Generate a password hash with openssl passwd -6 and add it to archlive/airootfs/etc/shadow following the syntax of shadow(5). For example:
 
-archlive/airootfs/etc/shadow
-
-root::14871::::::
-archie:$6$archiesalt$1yystReWRMUYWmt7fTR/BjcRWrmF//984HxCL6QxCMeDes0pEBRG3v1Jyqp1I1/x46kmU7KyjDfTXikqtq3YY.:14871::::::
+archlive/airootfs/etc/shadow   
+root::14871::::::   
+archie:$6$archiesalt$1yystReWRMUYWmt7fTR/BjcRWrmF//984HxCL6QxCMeDes0pEBRG3v1Jyqp1I1/x46kmU7KyjDfTXikqtq3YY.:14871::::::   
 
 Add the user's group and the groups which they will part of to archlive/airootfs/etc/group according to group. For example:
 
-archlive/airootfs/etc/group
+archlive/airootfs/etc/group   
+root:x:0:root   
+adm:x:4:archie   
+wheel:x:10:archie   
+uucp:x:14:archie   
+archie:x:1000:   
 
-root:x:0:root
-adm:x:4:archie
-wheel:x:10:archie
-uucp:x:14:archie
-archie:x:1000:
-
-Create the appropriate archlive/airootfs/etc/gshadow according to gshadow(5):
+Create the appropriate archlive/airootfs/etc/gshadow according to gshadow:
 
 archlive/airootfs/etc/gshadow
 
-root:!*::root
-archie:!*::
+root:!*::root   
+archie:!*::   
 
-Make sure /etc/shadow and /etc/gshadow have the correct permissions:
-
-archlive/profiledef.sh
+Make sure /etc/shadow and /etc/gshadow have the correct permissions:   
+archlive/profiledef.sh   
 
 ...
 file_permissions=(
@@ -100,21 +100,23 @@ file_permissions=(
 )
 
 After package installation, mkarchiso will create all specified home directories for users listed in archlive/airootfs/etc/passwd and copy work_directory/x86_64/airootfs/etc/skel/* to them. The copied files will have proper user and group ownership.
-Changing automatic login
+
+
+##Changing automatic login
 
 The configuration for getty's automatic login is located under airootfs/etc/systemd/system/getty@tty1.service.d/autologin.conf.
 
 You can modify this file to change the auto login user:
 
-[Service]
-ExecStart=
-ExecStart=-/sbin/agetty --autologin username --noclear %I 38400 linux
+[Service]   
+ExecStart=   
+ExecStart=-/sbin/agetty --autologin username --noclear %I 38400 linux   
 
-Or remove it altogether to disable auto login. 
+Or remove it altogether to disable auto login.    
 
-4)Burning the iso 
+4)Burning the iso    
 type sudo mkarchiso -v -w /path/to/work_dir -o /path/to/out_dir /path/to/profile/
 
 
 
-
+Huge Thanks to Arch Linux and Arch Wiki
