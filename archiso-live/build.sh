@@ -29,7 +29,7 @@ mkdir $temp_dir
 echo "======================================================Empty completed========================================================================="
 
 #command used for making archiso -v means verbose -w specifing a working directory.For more usage please read  mkarchiso help.
-mkarchiso -v -w /home/archiso-tempfiles ./
+mkarchiso -v -w /home/COS/archiso-tempfiles ./
 
 
 
