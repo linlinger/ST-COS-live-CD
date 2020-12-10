@@ -19,13 +19,16 @@ then
 	chmod  -r 755 $temp_dir
 else
 	echo "Temp directory exists.Skipping......"
-	ls /home
-
+	
 fi
-echo "Before we start. Please make sure you have an active internet connection.Press any key to continue or Ctrl+C to abort"
+echo "Before we start. Please make sure you have an active internet connection.Temp directory will be empited. Press any key to continue or Ctrl+C to abort"
 read
+echo "======================================================Empty started==========================================================================="
+rm -rf $temp_dir
+mkdir $temp_dir
+echo "======================================================Empty completed========================================================================="
 
-#command used for making archiso -v means verbose -w specifing a working directory.For more usage please read mkarchiso help.
+#command used for making archiso -v means verbose -w specifing a working directory.For more usage please read  mkarchiso help.
 mkarchiso -v -w /home/archiso-tempfiles ./
 
 
