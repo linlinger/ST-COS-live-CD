@@ -1,2 +1,2 @@
 # ST-COS-live-CD
- COS Live CDenvironment (Based on Arch Linux)
+ COS Live CD environment (Based on Arch Linux)
