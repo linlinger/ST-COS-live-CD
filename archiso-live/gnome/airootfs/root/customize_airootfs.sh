@@ -12,3 +12,4 @@ locale-gen
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 #systemctl enable networkmanager
 systemctl enable gdm
+systemctl set-default graphical.target
