@@ -133,7 +133,7 @@ mousepad
 wqy-zenhei
 #Essentials
 firefox
-#google-chrome
+google-chrome
 vi
 vim
 #archlinuxcn-keyring	#Needed when archlinuxcn enabled
