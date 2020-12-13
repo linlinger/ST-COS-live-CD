@@ -28,5 +28,8 @@ file_permissions=(
   ["/etc/skel/.bash_profile"]="0:0:644"
   ["/etc/skel/.bashrc"]="0:0:644"
   ["/etc/skel/.xinitrc"]="0:0:644"
-
+  ["/etc/lightdm"]="0:0:755"
+  #[""]=""
+  #[""]=""
+  #[""]=""
 )
