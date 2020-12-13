@@ -118,6 +118,7 @@ xf86-video-intel
 #X-desktop system and xfce4
 xorg-server
 xorg-xinit
+lightdm
 xfce4
 #utilities
 fcitx
