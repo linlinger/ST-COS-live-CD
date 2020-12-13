@@ -14,6 +14,7 @@ crda
 darkhttpd
 ddrescue
 dhclient
+dhcpcd
 diffutils
 dmraid
 dnsmasq
@@ -102,32 +103,34 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-#User customized
-##network manager
+#User-added packages
+
+#NetworkManager
 networkmanager
-nm-connection-editor
-bluez
+nm-connrction-editor
+bluuez
 bluez-utils
-##Video
-xf86-video-vesa
-xf86-video-intel
+#Display Drivers
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-nouveau
-##xfce Desktop enverioment
+xf86-video-intel
+#X-desktop system and xfce4
 xorg-server
-xorg-xinit
-###Other software
-####Input method
+xorg-init
+xfce4
+#utilities
 fcitx
 fcitx-gtk3
-#utility for xfce desktop
 gvfs
 thunar-volman
 midori
 mousepad
-#fonts supports Chinese
+#fonts
 wqy-zenhei
-
-#ess
+#Essentials
+firefox
+google-chrome
+vi
 vim
+archlinuxcn-keyring	#Needed when archlinuxcn enabled
