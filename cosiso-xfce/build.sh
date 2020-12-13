@@ -1,10 +1,10 @@
 #!/bin/bash
 #author: linlinger
-#date 2020 Dec 10th.
-
+#date 2020 Dec 14th.
+#Create a COSiso file
 #validating user has root permission or not.
 
-temp_dir="/home/archiso-tempfiles"
+temp_dir="/home/archiso-tempfiles/xfce"
 echo $temp_dir
 if [ $(id -u) != "0" ];
 then
@@ -15,8 +15,6 @@ fi
 if [ ! -d $temp_dir ];
 then
 	mkdir $temp_dir
-	#Granting permission
-	chmod  -r 755 $temp_dir
 else
 	echo "Temp directory exists.Skipping......"
 	
@@ -29,7 +27,7 @@ mkdir $temp_dir
 echo "======================================================Empty completed========================================================================="
 
 #command used for making archiso -v means verbose -w specifing a working directory.For more usage please read  mkarchiso help.
-mkarchiso -v -w /home/COS/archiso-tempfiles ./
+mkarchiso -v -w $temp_dir ./
 
 
 
