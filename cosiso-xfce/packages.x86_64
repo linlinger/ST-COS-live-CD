@@ -107,8 +107,8 @@ zsh
 
 #NetworkManager
 networkmanager
-nm-connrction-editor
-bluuez
+nm-connection-editor
+bluez
 bluez-utils
 #Display Drivers
 xf86-video-amdgpu
@@ -133,4 +133,4 @@ firefox
 google-chrome
 vi
 vim
-archlinuxcn-keyring	#Needed when archlinuxcn enabled
+#archlinuxcn-keyring	#Needed when archlinuxcn enabled
