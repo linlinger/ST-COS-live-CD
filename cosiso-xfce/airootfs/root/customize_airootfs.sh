@@ -11,4 +11,4 @@ sed -i 's/#\(zh_CN\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 systemctl enable NetworkManager
-systemctl enable lightdm
+#systemctl enable lightdm
