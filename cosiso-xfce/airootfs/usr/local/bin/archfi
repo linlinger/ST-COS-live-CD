@@ -13,7 +13,7 @@
 
 
 apptitle="Arch Linux Fast Install (archfi) - Version: 2020.12.08.22.06.59 (GPLv3)"
-baseurl=https://raw.githubusercontent.com/MatMoul/archfi/master
+baseurl=https://raw.githubusercontent.com/linlinger/archfi/master
 cpl=0
 skipfont="0"
 fspkgs=""
@@ -82,6 +82,7 @@ chooselanguage(){
 	options=()
 	options+=("Arabic" "(By Mohammad Alawadi)")
 	options+=("Brazilian" "(By MaxWilliamJF)")
+	options+=("Chinese" "(By linlinger)")
 	options+=("Dutch" "(By bowero)")
 	options+=("English" "(By MatMoul)")
 	options+=("French" "(By MatMoul)")
