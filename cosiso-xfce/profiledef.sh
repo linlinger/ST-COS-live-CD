@@ -21,4 +21,8 @@ file_permissions=(
   #user-added packages
   ["/etc/shadow"]="0:0:0400"
   ["/etc/gshadow"]="0:0:0400"
+  [""]=""
+  [""]=""
+  [""]=""
+  ["/etc/sudoers"]="0:0:644"
 )
