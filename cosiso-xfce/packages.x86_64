@@ -120,9 +120,9 @@ xf86-video-intel
 #X-desktop system and xfce4
 xorg
 xorg-xinit
-xterm
-lightdm
-lightdm-gtk-greeter
+#xterm
+#lightdm
+#lightdm-gtk-greeter
 xfce4
 #utilities
 fcitx
@@ -135,7 +135,7 @@ mousepad
 wqy-zenhei
 #Essentials
 firefox
-google-chrome
+#google-chrome
 vi
 vim
 #archlinuxcn-keyring	#Needed when archlinuxcn enabled
