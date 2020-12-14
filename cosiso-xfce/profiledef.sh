@@ -24,5 +24,11 @@ file_permissions=(
   [""]=""
   [""]=""
   [""]=""
-  ["/etc/sudoers"]="0:0:644"
+  ["/etc/sudoers"]="0:0:0400"
+  ["/etc/skel"]="0:0:755"
+  ["/etc/skel/.bash_logout"]="644"
+  ["/etc/skel/.bash_profile"]="644"
+  ["/etc/skel/.bashrc"]="644"
+  ["/etc/skel/.xinitrc"]="644"
+
 )
