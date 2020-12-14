@@ -111,6 +111,7 @@ nm-connection-editor
 bluez
 bluez-utils
 #Display Drivers
+xf86-video-vesa
 xf86-video-qxl
 xf86-video-amdgpu
 xf86-video-ati
