@@ -5,7 +5,6 @@
 #validating user has root permission or not.
 
 temp_dir="/home/archiso-tempfiles/xfce"
-echo $temp_dir
 if [ $(id -u) != "0" ];
 then
 	echo "Root permission is required to build archiso.Please re-run this script use sudo."
@@ -14,7 +13,8 @@ fi
 #Creating archiso tempory directory
 if [ ! -d $temp_dir ];
 then
-	mkdir $temp_dir
+	mkdir -p $temp_dir
+	#echo $temp_dir
 else
 	echo "Temp directory exists.Skipping......"
 	
