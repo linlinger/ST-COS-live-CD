@@ -118,9 +118,11 @@ xf86-video-ati
 xf86-video-nouveau
 xf86-video-intel
 #X-desktop system and xfce4
-xorg-server
+xorg
 xorg-xinit
+xterm
 lightdm
+lightdm-gtk-greeter
 xfce4
 #utilities
 fcitx
