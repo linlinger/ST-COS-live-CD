@@ -21,10 +21,8 @@ file_permissions=(
   #user-added packages
   ["/etc/shadow"]="0:0:0400"
   ["/etc/gshadow"]="0:0:0400"
-  [""]=""
-  [""]=""
-  [""]=""
-  ["/etc/sudoers"]="0:0:0400"
+  #Sample to add files
+  #[""]=""
   ["/etc/skel"]="0:0:755"
   ["/etc/skel/.bash_logout"]="644"
   ["/etc/skel/.bash_profile"]="644"
