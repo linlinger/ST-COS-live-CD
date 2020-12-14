@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=COS Installer
+Type=Application
+Exec=/usr/local/bin/archfi
+Icon=/usr/local/bin/archfi.png

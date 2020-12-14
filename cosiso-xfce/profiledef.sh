@@ -18,6 +18,8 @@ file_permissions=(
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
+  ["/usr/local/bin/archfi"]="0:0:755"
+  ["/usr/local/bin/archfi.png"]="0:0:755"
   #user-added packages
   ["/etc/shadow"]="0:0:0400"
   ["/etc/gshadow"]="0:0:0400"
