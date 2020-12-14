@@ -117,7 +117,7 @@ xf86-video-nouveau
 xf86-video-intel
 #X-desktop system and xfce4
 xorg-server
-xorg-init
+xorg-xinit
 xfce4
 #utilities
 fcitx
