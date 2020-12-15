@@ -246,6 +246,10 @@ noto-fonts
 opendesktop-fonts
 ttf-opensans
 freetype2
+#Chinese fonts support
+wqy-zenhei
+wqy-microhei
+
 
 # Xfce
 xfce4
@@ -308,3 +312,13 @@ calamares
 ckbcomp
 mkinitcpio-openswap
 
+#Chinese input method
+fcitx
+fcitx-configtool
+fcitx-sunpinyin
+
+#wine application support
+wine
+wine-gecko
+wine-mono
+yay
