@@ -88,11 +88,11 @@ rmcustairoot () {
 cpmyfiles () {
 cp packages.x86_64 ./releng/
 cp pacman.conf ./releng/
-cp splash.png ./releng/syslinux/
 cp profiledef.sh ./releng/
 cp -r usr ./releng/airootfs/
 cp -r etc ./releng/airootfs/
 cp -r opt ./releng/airootfs/
+cp -r syslinux ./releng/airootfs
 [[ -d xfce4 ]] && mkdir -p ./releng/airootfs/etc/skel/.config
 [[ -d xfce4 ]] && cp -r xfce4 ./releng/airootfs/etc/skel/.config/
 }
